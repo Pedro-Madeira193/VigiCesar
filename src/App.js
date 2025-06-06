@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Cesar from './components/Cesar'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <nav>
+        <a id='cesarNavBtn' href='#CesarCont'>C</a>
+        <a id='vigenereNavBtn' href='#home'>V</a>
+      </nav>
+      <header>
+        <h1>VigiCesar</h1>
+        <span>descriptador e encriptador</span>
       </header>
+      <div id="menu">
+        <h2>escolha qual deseja decifrar/cifrar:</h2>
+        <div>
+          <a href='#menu' className='mainBtns' id='cesarBtn'>cesar</a>
+          <a href='#menu' className='mainBtns' id='vigenereBtn'>vigenere</a>
+        </div>
+      </div>
+      <Cesar name="a" id="CesarCont"/>
     </div>
   );
 }
