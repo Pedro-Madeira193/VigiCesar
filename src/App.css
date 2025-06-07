@@ -24,7 +24,8 @@ nav a{
   width: 2rem;
   padding: 6px;
   text-align: end;
-  transform: translateX(-30%);
+  transform: translateX(-20%);
+  cursor: pointer;
 }
 
 nav a:hover{
