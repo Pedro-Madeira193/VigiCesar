@@ -1,9 +1,94 @@
 :root{
     --cesar-bg: #121212;
+    --vigenere-bg: #171717;
 }
 
-.Cesar{
+#Cesar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100vh;
     background-color: var(--cesar-bg);
+}
+
+#Vigenere{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--vigenere-bg);
+}
+
+.header{
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.inputsContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 90%;
+    height: 90%;
+}
+
+.textToCript, .criptToText{
+    flex-grow: 1;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.cesarBtn{
+    width: 15rem;
+    height: 3rem;
+    border: solid 2px var(--font);
+    background: none;
+    color: var(--font);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cesarBtn:hover{
+    background-color: var(--font);
+    color: var(--cesar-bg);
+}
+
+textarea{
+    width: 100%;
+    background: none;
+    color: var(--font);
+    font-size: 15px;
+    border: solid 2px var(--font);
+    padding: 10px;
+    height: 80%;
+}
+
+textarea::placeholder{
+    color: var(--font);
+    opacity: .5;
+    font-size: 15px;
+}
+
+textarea:focus::placeholder{
+    color: var(--cesar-bg);
+}
+
+textarea:focus{
+    background-color: var(--font);
+    color: var(--cesar-bg);
 }

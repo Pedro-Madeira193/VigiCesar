@@ -94,7 +94,12 @@ header span{
   font-size: 25px;
 }
 
-.mainBtns:hover{
+.mainBtns:hover, .mainBtns:focus{
   background-color: var(--font);
   color: var(--sec-bg);
+}
+
+.container{
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
 }
