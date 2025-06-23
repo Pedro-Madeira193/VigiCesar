@@ -129,4 +129,8 @@ textarea:focus{
     .inputsContainer{
         flex-direction: column;
     }
+
+    .title{
+        font-size: 40px;
+    }
 }

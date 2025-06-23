@@ -66,10 +66,11 @@ function App() {
     if(key.length > text.length || key.length < 1){
       return "chave não pode ser maior que o tamanho da palavra e deve ser maior que 0";
     }
+
     for(let i = 0; i < text.length;i++){
-      if(key.length != text.length){
-        newKey = newKey + key[i % key.length];
-      }
+      newKey = newKey + key[i % key.length];}
+
+    for(let i = 0; i < text.length;i++){
       let temp = text.charCodeAt(i) - 97;
       let keyTemp = newKey.charCodeAt(i) - 97;
       let sum = (temp + keyTemp) % 26;
@@ -93,13 +94,14 @@ function App() {
     if(key.length > text.length || key.length < 1){
       return "chave não pode ser maior que o tamanho da palavra e deve ser maior que 0";
     }
+    
     for(let i = 0; i < text.length;i++){
-      if(key.length != text.length){
-        newKey = newKey + key[i % key.length];
-      }
+      newKey = newKey + key[i % key.length];}
+
+    for(let i = 0; i < text.length;i++){
       let temp = text.charCodeAt(i) - 97;
       let keyTemp = newKey.charCodeAt(i) - 97;
-      let sum = (temp - keyTemp + 26) % 26;
+      let sum = (temp + keyTemp) % 26;
       res = res + String.fromCharCode(sum + 97);
     }
     return res;

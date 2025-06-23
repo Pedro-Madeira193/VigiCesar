@@ -107,18 +107,7 @@ header span{
 
 @media screen and (max-width: 600px) {
   nav{
-    left: 80%;
-    top: 85%;
-    bottom: 0;
-    gap: 20px;
-  }
-
-  nav a{
-    font-size: 25px;
-    opacity: 1;
-    padding: 10px;
-    transform: translateX(0);
-    text-align: center;
+    display: none;
   }
 
   header{
