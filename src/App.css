@@ -9,7 +9,7 @@ nav{
   flex-direction: column;
   position: fixed;
   left: 0;
-  top: 50%;
+  top: 50vh;
   height: 6rem;
   justify-content: space-around;
   align-items: center;
@@ -103,4 +103,20 @@ header span{
 .container{
   scroll-snap-align: start;
   scroll-snap-stop: normal;
+}
+
+@media screen and (max-width: 600px) {
+  nav{
+    left: 90%;
+    top: 85%;
+    bottom: 0;
+    gap: 20px;
+  }
+
+  nav a{
+    font-size: 25px;
+    opacity: 1;
+    padding: 10px;
+    transform: translateX(0);
+  }
 }
