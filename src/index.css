@@ -34,7 +34,7 @@ code {
 }
 
 @media screen and (max-width: 600px){
-  html{
-    scroll-snap-type: y proximity;
+  *{
+    -webkit-tap-highlight-color: transparent;
   }
 }

@@ -116,3 +116,10 @@ textarea:focus{
     background-color: var(--font);
     color: var(--cesar-bg);
 }
+
+@media screen and (max-width: 600px){
+    #Cesar{
+        width: 100vw;
+        height: 100vh;
+    }
+}
