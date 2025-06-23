@@ -119,7 +119,7 @@ textarea:focus{
 
 @media screen and (max-width: 600px){
     #Cesar{
-        width: 100vw;
+        width: 110vw;
         height: 100vh;
     }
 }
