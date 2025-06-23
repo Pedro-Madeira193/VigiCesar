@@ -49,6 +49,11 @@ header h1{
   font-weight: 800;
 }
 
+header i{
+  position: absolute;
+  bottom: 1rem;
+}
+
 header span{
   font-size: 20px;
   font-weight: 600;

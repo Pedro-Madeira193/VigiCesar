@@ -116,6 +116,7 @@ function App() {
       <header className='container' id="teste">
         <h1>VigiCesar</h1>
         <span>descriptador e encriptador</span>
+        <i class="bi bi-chevron-double-down"></i>
       </header>
       <div id="menu" className='container'>
         <h2>escolha qual deseja decifrar/cifrar:</h2>
