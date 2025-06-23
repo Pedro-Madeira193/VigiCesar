@@ -120,6 +120,10 @@ header span{
     height: 100vh;
   }
 
+  header i{
+    bottom: 3rem;
+  }
+
   #menu{
     gap: 20px;
     width: 100%;
