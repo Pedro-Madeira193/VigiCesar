@@ -125,4 +125,8 @@ textarea:focus{
     #Viginere{
         width: 100%;
     }
+
+    .inputsContainer{
+        flex-direction: column;
+    }
 }
