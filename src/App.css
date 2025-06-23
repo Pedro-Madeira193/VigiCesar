@@ -121,7 +121,8 @@ header span{
   }
 
   header i{
-    bottom: 3rem;
+    bottom: 5rem;
+    font-size: 20px;
   }
 
   #menu{
