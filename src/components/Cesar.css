@@ -4,6 +4,7 @@
 }
 
 #Cesar{
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,6 +14,7 @@
 }
 
 #Vigenere{
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,12 +117,6 @@ textarea:focus::placeholder{
 textarea:focus{
     background-color: var(--font);
     color: var(--cesar-bg);
-}
-
-#downPage{
-    background-color: rebeccapurple;
-    height: 100px;
-    width: 100px;
 }
 
 @media screen and (max-width: 600px){
