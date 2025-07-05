@@ -117,6 +117,12 @@ textarea:focus{
     color: var(--cesar-bg);
 }
 
+#downPage{
+    background-color: rebeccapurple;
+    height: 100px;
+    width: 100px;
+}
+
 @media screen and (max-width: 600px){
     #Cesar{
         width: 100%;
