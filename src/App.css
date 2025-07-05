@@ -16,6 +16,7 @@ nav{
   justify-content: space-around;
   align-items: center;
   transform: translateY(-3rem);
+  z-index: 20;
 }
 
 nav a{
