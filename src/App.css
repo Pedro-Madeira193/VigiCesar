@@ -128,7 +128,7 @@ header span{
     height: 100vh;
   }
 
-  header i{
+  #downPage{
     bottom: 15%;
     font-size: 25px;
   }
