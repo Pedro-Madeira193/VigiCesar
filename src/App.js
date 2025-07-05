@@ -5,9 +5,7 @@ function App() {
 
   function cesarCript(text, key){
     let res = "";
-    text = text.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
-    text = text.toLowerCase();
-    text = text.replace(/[^a-zA-Z]/g, '');
+    text = text.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-zA-Z]/g, '');
     for(let i = 0;i < text.length;i++){
       let temp = text.charCodeAt(i);
       if(temp > 123 || temp < 97){
@@ -29,9 +27,7 @@ function App() {
 
   function cesarDecript(text, key){
     let res = "";
-    text = text.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
-    text = text.toLowerCase();
-    text = text.replace(/[^a-zA-Z]/g, '');
+    text = text.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-zA-Z]/g, '');
     for(let i = 0;i < text.length;i++){
       let temp = text.charCodeAt(i);
       if(temp > 123 || temp < 97){
@@ -58,9 +54,7 @@ function App() {
     text = text.toLowerCase();
     text = text.replace(/[^a-zA-Z]/g, '');
     text = text.replaceAll(" ","");
-    key = key.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
-    key = key.toLowerCase();
-    key = key.replace(/[^a-zA-Z]/g, '');
+    key = key.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-zA-Z]/g, '');
     key = key.replaceAll(" ","");
 
     if(key.length > text.length || key.length < 1){
@@ -86,9 +80,7 @@ function App() {
     text = text.toLowerCase();
     text = text.replace(/[^a-zA-Z]/g, '');
     text = text.replaceAll(" ","");
-    key = key.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
-    key = key.toLowerCase();
-    key = key.replace(/[^a-zA-Z]/g, '');
+    key = key.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-zA-Z]/g, '');
     key = key.replaceAll(" ","");
 
     if(key.length > text.length || key.length < 1){
@@ -101,7 +93,7 @@ function App() {
     for(let i = 0; i < text.length;i++){
       let temp = text.charCodeAt(i) - 97;
       let keyTemp = newKey.charCodeAt(i) - 97;
-      let sum = (temp + keyTemp) % 26;
+      let sum = (temp - keyTemp + 26) % 26;
       res = res + String.fromCharCode(sum + 97);
     }
     return res;
@@ -116,7 +108,7 @@ function App() {
       <header className='container' id="teste">
         <h1>VigiCesar</h1>
         <span>descriptador e encriptador</span>
-        <i class="bi bi-chevron-double-down"></i>
+        <a href='#menu' id="downPage"><i class="bi bi-chevron-double-down"></i></a>
       </header>
       <div id="menu" className='container'>
         <h2>escolha qual deseja decifrar/cifrar:</h2>

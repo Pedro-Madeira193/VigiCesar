@@ -111,7 +111,12 @@ header span{
   scroll-snap-stop: normal;
 }
 
-@media screen and (max-width: 600px) {
+#downPage{
+  color: var(--font);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
   nav{
     display: none;
   }
